@@ -458,6 +458,7 @@ header {
 }
 
 footer {
+	z-index: 10;
 	background-color: white;
     margin: 16px 0px;
     border: 3px solid black;
