@@ -354,7 +354,7 @@ left: 220px;
 
 .leviathan-cross {
 	position: absolute;
-	top: 10em;
+	top: 15em;
 	height: 400px;
     width: 400px;
     position: absolute;
@@ -471,9 +471,33 @@ footer {
     font-size: 1.1em;
 }
 
-@media screen and (max-width:800px) {
+@media screen and (max-width:900px) {
 	.leviathan-cross {
 		display: none;
+	}
+	header, footer {
+		border: none;
+		position: fixed;
+		left: 0%;
+		margin: 0px;
+		display: grid;
+		place-items: center;
+		width: 100vw;
+	}
+}
+
+@media screen and (max-height:600px) {
+	.leviathan-cross {
+		display: none;
+	}
+	header, footer {
+		border: none;
+		position: fixed;
+		left: 0%;
+		margin: 0px;
+		display: grid;
+		place-items: center;
+		width: 100vw;
 	}
 }
 
