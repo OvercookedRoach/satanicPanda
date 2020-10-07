@@ -1,0 +1,376 @@
+body {
+    margin: 0;
+    background-color: pink;
+}
+
+.panda-container {
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    display: grid;
+    place-items: center;
+}
+/* Panda */
+
+.panda {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    /* border: 1px solid black; */ /* Just for visualization */
+    width: 300px;
+    height: 300px;
+}
+
+/* Head */
+
+.panda-head {
+    z-index: 1;
+    background-color: white;
+    height: 260px;
+    width: 300px;
+    border: 5px solid black;
+    border-radius: 180px 180px 130px 130px;
+}
+
+/* Eye Circles */
+
+.panda-eyes-circles {
+    height: 80px;
+    width: 65px;
+    position: absolute;
+}
+
+.panda-eyes-circles::before,  .panda-eyes-circles::after {
+    content: "";
+    z-index: 0;
+    background-color: black;
+    height: 90px;
+    width: 75px;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.panda-eyes-circles::before {
+    left: 30px;
+    top: 60px;
+}
+
+.panda-eyes-circles::after {
+    /* right: -215px; */
+    right: -205px;
+    top: 60px;
+}
+
+/* Eyes */
+
+.panda-eyes {
+    height: 80px;
+    width: 65px;
+    position: absolute;
+}
+
+.panda-eyes::before,  .panda-eyes::after {
+    content: "";
+    z-index: 1;
+    background-color: white;
+    height: 75px;
+    width: 65px;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.panda-eyes::before {
+    left: 40px;
+    top: 65px;
+}
+
+.panda-eyes::after {
+    /* right: -215px; */
+    right: -195px;
+    top: 65px;
+}
+
+/* Pupils */
+
+.panda-pupils {
+    height: 80px;
+    width: 65px;
+    position: absolute;
+}
+
+.panda-pupils::before,  .panda-pupils::after {
+    content: "";
+    z-index: 1;
+    background-color: black;
+    height: 50px;
+    width: 40px;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.panda-pupils::before {
+    left: 55px;
+    top: 85px;
+}
+
+.panda-pupils::after {
+    /* right: -215px; */
+    right: -180px;
+    top: 85px;
+}
+
+/* Pupil Highlights */ 
+
+.panda-pupils-highlights {
+    height: 80px;
+    width: 65px;
+    position: absolute;
+}
+
+.panda-pupils-highlights::before,  .panda-pupils-highlights::after {
+    content: "";
+    z-index: 1;
+    background-color: white;
+    height: 25px;
+    width: 25px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.panda-pupils-highlights::before {
+    left: 80px;
+    top: 80px;
+}
+
+.panda-pupils-highlights::after {
+    /* right: -215px; */
+    right: -185px;
+    top: 80px;
+}
+
+/* Ears */
+
+.panda-ears {
+        height: 80px;
+        width: 65px;
+        position: absolute;
+}
+
+.panda-ears::before, .panda-ears::after {
+    content: "";
+    z-index: 1;
+    background-color: white;
+    height: 80px;
+    width: 100px;
+    border: 5px solid black;
+    border-radius: 80px 80px 30px 30px;
+    position: absolute;
+}
+
+.panda-ears::before {
+    transform: rotate(-35deg);
+    top: -40px;
+    left: -20px;
+}
+
+.panda-ears::after {
+    transform: rotate(35deg);
+    top: -40px;
+    left: 210px;
+}
+
+/* Ears Inside */
+
+.panda-ears-inside {
+    height: 80px;
+    width: 65px;
+    position: absolute;
+}
+
+.panda-ears-inside::before, .panda-ears-inside::after {
+content: "";
+z-index: 1;
+background-color: pink;
+height: 50px;
+width: 65px;
+border: 5px solid black;
+border-radius: 80px 80px 30px 30px;
+position: absolute;
+}
+
+.panda-ears-inside::before {
+transform: rotate(-35deg);
+top: -12px;
+left: 5px;
+}
+
+.panda-ears-inside::after {
+transform: rotate(35deg);
+top: -12px;
+left: 220px;
+}
+
+/* Cheeks */
+
+.panda-cheeks {
+    height: 80px;
+    width: 65px;
+    position: absolute;
+}
+
+.panda-cheeks::before,  .panda-cheeks::after {
+    content: "";
+    z-index: 1;
+    background-color: pink;
+    height: 50px;
+    width: 50px;
+    border: 5px solid black;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.panda-cheeks::before {
+    left: 30px;
+    top: 130px;
+}
+
+.panda-cheeks::after {
+    /* right: -215px; */
+    right: -205px;
+    top: 130px;
+}
+
+/* Nose */
+
+.panda-nose {
+    position: absolute;
+    top: 160px;
+    left: 137px;
+    z-index: 2;
+    background-color: pink;
+    width: 25px;
+    height: 25px;
+    border: 5px solid black;
+    border-radius: 50px 50px 80px 80px;
+}
+
+/* Nose Line */
+
+.panda-nose-line {
+    position: absolute;
+    top: 190px;
+    left: 153px;
+    z-index: 2;
+    height: 30px;
+    border: 2px solid black;
+    background-color: black;
+}
+
+/* Mouth */
+
+.panda-mouth {
+    position: absolute;
+    top: 65px;
+    left: 100px;
+    z-index: 2;
+    width: 100px;
+    height: 150px;
+    border: 5px solid black;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    border-right-color: transparent;
+}
+
+/* Pentagram */
+
+.pentagram {
+    position: absolute;
+    top: 45px;
+    left: 145px;
+    color: black;
+}
+
+.pentagram-line-1 {
+    position: absolute;
+    left: 0px;
+    z-index: 2;
+    height: 40px;
+    border: 2px solid currentColor;
+    background-color: currentColor;
+    transform: rotate(-20deg);
+}
+.pentagram-line-2 {
+    position: absolute;
+    left: 15px;
+    z-index: 2;
+    height: 40px;
+    border: 2px solid currentColor;
+    background-color: currentColor;
+    transform: rotate(20deg);
+}
+.pentagram-line-3 {
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    z-index: 2;
+    height: 40px;
+    border: 2px solid currentColor;
+    background-color: currentColor;
+    transform: rotate(90deg);
+}
+.pentagram-line-4 {
+    position: absolute;
+    top: -7px;
+    left: 5px;
+    z-index: 2;
+    height: 40px;
+    border: 2px solid currentColor;
+    background-color: currentColor;
+    transform: rotate(55deg);
+}
+.pentagram-line-5 {
+    position: absolute;
+    top: -7px;
+    left: 11px;
+    z-index: 2;
+    height: 40px;
+    border: 2px solid currentColor;
+    background-color: currentColor;
+    transform: rotate(-55deg);
+}
+
+header {
+    margin: 16px 0px;
+    border: 5px solid black;
+    padding: 8px;
+    position: absolute;
+    top: 0px;
+    left: 16px;
+    color: black;
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+footer {
+    margin: 16px 0px;
+    border: 5px solid black;
+    padding: 4px;
+    position: absolute;
+    bottom: 0px;
+    right: 16px;
+    color: black;
+    font-family: monospace;
+    font-size: 1.1em;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    color: white;
+}
